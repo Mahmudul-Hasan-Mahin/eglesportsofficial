@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client({ disableEveryone: false });
 const readline = require("readline");
-const token = 'NzMyMjcwMzQyOTA2ODM5MTUx.XwyJ9w.xGfjQA1Lw5Aq4MPnq7Hlglo-O5o'; //EGL ESPORTS
+const token = 'NzMyMjcwMzQyOTA2ODM5MTUx.XwyJ5g.hupEUJNhPDbdoQwpdwdjeQKOgEo'; //EGL ESPORTS
 const ownerid = '514004320547504130';
 
 const PREFIX = '~';
