@@ -6,12 +6,18 @@ const ownerid = '514004320547504130';
 
 const PREFIX = '~';
 
-var version = '1.0.1'
+bot.on("ready", () => {
+  console.log(`${bot.user.username} is Online!`);
+  bot.user.setStatus("dnd"); //OR 'idle', 'invisible' & 'dnd'
+  bot.user.setActivity(`EGLeSports Discord Server | instagram.com/eglesports.gg`, {url: "https://github.com/noob.gg/op",type: "WATCHING"}); //Type "PLAYING","WATCHING","STREAMING","LISTENING"
+});
+
+//var version = '1.0.1'
 //Welcome EGL ESPORTS
 bot.on('guildMemberAdd', member => {
   const channel = member.guild.channels.find(c => c.id === '728534570374397972'); // change this to the channel name you want to send the greeting to
   if (!channel) return;
-  channel.send(`${member},\nWelcome To **${member.guild.name}**.\nYou Are Now a Part Of Our Family .\nHave a Great Time in **${member.guild.name}**`);
+  channel.send(`${member},\nWelcome To **${member.guild.name}**.\nYou Are Now a Part Of Our Family.\nHave a Great Time in **${member.guild.name}**.`);
 });
 
 //DM All
